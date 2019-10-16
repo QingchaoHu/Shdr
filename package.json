@@ -9,7 +9,7 @@
   "dependencies": {
     "argparse": "latest",
     "uglify-js": "latest",
-    "coffee-script": "latest",
+    "coffeescript": "latest",
     "http-server": "latest"
   }
 }
