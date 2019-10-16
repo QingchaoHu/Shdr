@@ -78,12 +78,16 @@ class Viewer
       resolution:
         type: 'v2'
         value: new THREE.Vector2(@dom.clientWidth, @dom.clientHeight)
+      camera:
+        type: 'v3'
+        value: @camera.position
     @vs = shdr.Snippets.DefaultVertex
     @fs = shdr.Snippets.DefaultFragment
     return new THREE.ShaderMaterial(
       uniforms: @uniforms
       vertexShader: @vs
       fragmentShader: @fs
+      side: THREE.DoubleSide
     )
 
 @shdr ||= {}
